@@ -21,3 +21,28 @@ blocks.forEach((block , index) => {
     block.style.order = orderRange[index];
    
 });
+
+ 
+shuffle(orderRange);
+
+//Shuffle Function 
+function shuffle(array) {
+    let current = array.length,
+        temp,
+        random;
+    
+    while (current > 0) {
+        
+        random = Math.floor(Math.random() * current);
+       
+        //Decrease Length By 1 
+        current--;
+
+        temp = array[current];
+        array[current] = array[random];
+        array[random] = temp;
+       
+    }
+    return array
+}
+
