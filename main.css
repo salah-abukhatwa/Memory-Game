@@ -66,6 +66,10 @@ body{
   margin: 0 10px 20px;
 }
 
+.memore-game-blocks.no-clicking{
+    pointer-events: none;
+}
+
 .game-block .front{
     background-color: #333;
     line-height: 200px;
@@ -99,7 +103,8 @@ body{
     border: 5px solid #2196f3;
 }
 
-.game-block .flipped{
+ .game-block.flipped ,
+ .game-block.matched{
     transform: rotateY(180deg);
     -webkit-transform: rotateY(180deg);
     -moz-transform: rotateY(180deg);
