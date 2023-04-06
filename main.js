@@ -70,8 +70,10 @@ function stopClicking() {
 
             firstBlock.classList.add('matched');
             secondblock.classList.add('matched');
+            document.getElementById('success').play();
         } else {
             triesElement.innerHTML = parseInt(triesElement.innerHTML) + 1;
+            document.getElementById('fail').play();
 
             setTimeout(() => {
                 

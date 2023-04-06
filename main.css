@@ -110,4 +110,5 @@ body{
     -moz-transform: rotateY(180deg);
     -ms-transform: rotateY(180deg);
     -o-transform: rotateY(180deg);
+    pointer-events: none;
 }
